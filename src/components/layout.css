@@ -1,12 +1,13 @@
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: linear-gradient(to right bottom, rgba(250, 229, 150, 0.9), rgba(255, 241, 187, 0.9)); }
 
 body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
+  color: #173e43;
   padding: 3rem;
   font-size: 1.5rem;
   box-sizing: border-box; }
@@ -37,7 +38,7 @@ a {
   grid-column: content-start / content-end; }
 
 .cover {
-  background-image: linear-gradient(to right bottom, rgba(134, 139, 177, 0.9), rgba(42, 56, 103, 0.9)), url(../images/cover-image.png);
+  background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.9), rgba(63, 176, 172, 0.9)), url(../images/cover-image.png);
   display: grid;
   grid-column: content-start / content-end;
   grid-template-rows: 1fr min-content 3fr; }

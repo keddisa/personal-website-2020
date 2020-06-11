@@ -1,5 +1,5 @@
 .cover {
-    background-image: linear-gradient(to right bottom, rgba($color-blue-light, .9), rgba($color-blue, .9)), url(../images/cover-image.png);
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .9), rgba($color-primary, .9)), url(../images/cover-image.png);
     display: grid;
     grid-column: content-start / content-end;
     grid-template-rows: 1fr min-content 3fr;
