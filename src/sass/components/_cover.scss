@@ -1,9 +1,16 @@
 .cover {
-    background-image: linear-gradient(to right bottom, rgba($color-primary, .9), rgba($color-primary, .9)), url(../images/cover-image.png);
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .8), rgba($color-primary, .8)), url(../images/cover-picture.jpg); 
+    background-size: cover;
     display: grid;
+    grid-gap: 2rem;
     grid-column: content-start / content-end;
-    grid-template-rows: 1fr min-content 3fr;
+    grid-template-rows: 1fr min-content min-content min-content 3fr;
+    color: $color-main-text;
+
+    background-attachment: fixed;
+
 } 
+
 
 .cover-title {
     font-size: 5rem;
@@ -12,26 +19,38 @@
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     text-align: center;
-    padding-top: 3rem;
+    margin-top: 3rem;
 
-    @media only screen and (max-width: $bp-large) {
-        font-size: 4rem;
-    }
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 3.5rem; 
-    }
+    // background-color: $color-theme-light;
+    opacity: .8;
 
-    @media only screen and (max-width: $bp-small) {
-        font-size: 3rem; 
-    }
 }
 
 .cover-subtitle {
+    grid-row: 3 / 4;
     font-size: 3rem;
     text-align: center;
     align-self: center;
     justify-self: center;
+
+    // background-color: $color-theme-light;
+    // opacity: .8;
+
     @media only screen and (max-width: $bp-large) {
         font-size: 2rem;
     }
+}
+
+.cover-subtitle2 {
+    grid-row: 4 / 5;
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    padding: .5rem 2rem;
+    margin-top: 3rem;
+
+    // background-color: $color-theme-light;
+    opacity: .8;
+
 }
