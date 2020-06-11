@@ -1,4 +1,161 @@
 .skills {
-    display: grid;
     grid-column: content-start / content-end;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 5rem 0;
 }
+
+#hexGrid {
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  overflow: hidden;
+  font-size: 15px;
+  list-style-type: none;
+  padding-top: 5rem;
+  padding-right: 2rem;
+}
+
+.hex {
+  position: relative;
+  visibility:hidden;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  transition: all .3s;
+  
+  &:hover {
+    transform: translateY(-.5rem) scale(1.03); 
+    filter: brightness(70%);
+    box-shadow: 7px 7px 20px rgba($color: #000000, $alpha: .2);
+}
+}
+.hex::after{
+  content:'';
+  display:block;
+
+  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+}
+.hexIn{
+  position: absolute;
+  width:96%;
+  padding-bottom: 110.851%; /* =  width / sin(60) */
+  margin:0 2%;
+  overflow: hidden;
+  visibility: hidden;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+
+
+}
+.hexIn * {
+  position: absolute;
+  visibility: visible;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  background-color: $color-secondary;
+}
+.hexImage {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: red($color: #000000);
+    outline:1px solid transparent;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+
+
+
+/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
+@media (min-width:750px) { /* <- 7-6  hexagons per row */
+  #hexGrid{
+    padding-bottom: 4.4%
+  }
+  .hex {
+    width: 14.2857%; /* = 100 / 6 */
+  }
+  .hex:nth-child(13n+8){ /* first hexagon of even rows */
+    margin-left:7.14285%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 750px) and (min-width:600px) { /* <- 6-5  hexagons per row */
+    #hexGrid{
+      padding-bottom: 4.4%
+    }
+    .hex {
+      width: 16.6666666667%; /* = 100 / 6 */
+    }
+    .hex:nth-child(11n+7){ /* first hexagon of even rows */
+      margin-left:8.33333333333%;  /* = width of .hex / 2  to indent even rows */
+    }
+  }
+
+@media (max-width:600px) and (min-width:500px) { /* <- 5-4  hexagons per row */
+  #hexGrid{
+    padding-bottom: 4.4%
+  }
+  .hex {
+    width: 20%; /* = 100 / 5 */
+  }
+  .hex:nth-child(9n+6){ /* first hexagon of even rows */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 500px) and (min-width:420px) { /* <- 4-3  hexagons per row */
+  #hexGrid{
+    padding-bottom: 5.5%
+  }
+  .hex {
+    width: 25%; /* = 100 / 4 */
+  }
+  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 420px) and (min-width:300px) { /* <- 3-2  hexagons per row */
+  #hexGrid{
+    padding-bottom: 7.4%
+  }
+  .hex {
+    width: 33.333%; /* = 100 / 3 */
+  }
+  .hex:nth-child(5n+4){ /* first hexagon of even rows */
+    margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+// @media (max-width: 600px) { /* <- 2-1  hexagons per row */
+//   #hexGrid{
+//     padding-bottom: 11.2%
+//   }
+//   .hex {
+//     width: 50%; /* = 100 / 3 */
+//   }
+//   .hex:nth-child(3n+3){ /* first hexagon of even rows */
+//     margin-left:25%;  /* = width of .hex / 2  to indent even rows */
+//   }
+// }
+
+// @media (max-width: 400px) {
+//     #hexGrid {
+//         font-size: 13px;
+//     }
+// }
+
+
+
+//Jenkins Icon
+
+.B{fill-rule:evenodd}.C{fill:#dcd9d8}.D{fill:#d33833}.E{fill:#231f20}.F{fill:#f7e4cd}.G{stroke:#d33833}.H{stroke-width:.257}
