@@ -1,0 +1,105 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  font-size: 1.5rem;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 37em) {
+    body {
+      padding: 2rem; } }
+  @media only screen and (max-width: 25em) {
+    body {
+      padding: 1rem; } }
+
+.app {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end] 1fr [full-end]; }
+  @media only screen and (max-width: 37em) {
+    .app {
+      grid-template-columns: [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end]; } }
+
+.main {
+  display: grid;
+  grid-column: content-start/ content-end; }
+
+a {
+  color: rgba(0, 140, 255, 0.726);
+  text-decoration: none; }
+
+.contact {
+  display: grid;
+  grid-column: content-start / content-end; }
+
+.cover {
+  background-image: linear-gradient(to right bottom, rgba(134, 139, 177, 0.9), rgba(42, 56, 103, 0.9)), url(../images/cover-image.png);
+  display: grid;
+  grid-column: content-start / content-end;
+  grid-template-rows: 1fr min-content 3fr; }
+
+.cover-title {
+  font-size: 5rem;
+  align-self: center;
+  justify-self: center;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  text-align: center;
+  padding-top: 3rem; }
+  @media only screen and (max-width: 50em) {
+    .cover-title {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 37em) {
+    .cover-title {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .cover-title {
+      font-size: 3rem; } }
+
+.cover-subtitle {
+  font-size: 3rem;
+  text-align: center;
+  align-self: center;
+  justify-self: center; }
+  @media only screen and (max-width: 50em) {
+    .cover-subtitle {
+      font-size: 2rem; } }
+
+.footer {
+  background-color: #393f4d;
+  color: sans-serif;
+  grid-column: content-start / content-end;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  padding: 3rem 2rem;
+  margin-top: 2rem; }
+
+.header {
+  display: grid;
+  grid-column: content-start / content-end; }
+
+.journey {
+  display: grid;
+  grid-column: content-start / content-end; }
+
+.main-content {
+  display: grid;
+  grid-column: content-start/ content-end;
+  grid-template-columns: [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end];
+  grid-template-rows: 70vh; }
+
+.portfolio {
+  display: grid;
+  grid-column: content-start / content-end; }
+
+.skills {
+  display: grid;
+  grid-column: content-start / content-end; }
+
+.testimonials {
+  display: grid;
+  grid-column: content-start / content-end; }

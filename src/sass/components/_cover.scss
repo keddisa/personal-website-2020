@@ -1,0 +1,37 @@
+.cover {
+    background-image: linear-gradient(to right bottom, rgba($color-blue-light, .9), rgba($color-blue, .9)), url(../images/cover-image.png);
+    display: grid;
+    grid-column: content-start / content-end;
+    grid-template-rows: 1fr min-content 3fr;
+} 
+
+.cover-title {
+    font-size: 5rem;
+    align-self: center;
+    justify-self: center;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    text-align: center;
+    padding-top: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 4rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 3.5rem; 
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3rem; 
+    }
+}
+
+.cover-subtitle {
+    font-size: 3rem;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    @media only screen and (max-width: $bp-large) {
+        font-size: 2rem;
+    }
+}
