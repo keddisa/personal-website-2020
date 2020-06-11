@@ -33,12 +33,48 @@ a {
   color: rgba(0, 140, 255, 0.726);
   text-decoration: none; }
 
+.title-card-container {
+  grid-column: content-start / content-end;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 40%; }
+
+.title-card-left {
+  grid-column: 1 / 5; }
+
+.title-card-center {
+  grid-column: 2 / 6; }
+
+.title-card-right {
+  grid-column: 3 / 7; }
+
+.title-card {
+  display: grid;
+  background: linear-gradient(to right bottom, #3fb0ac, #87c8b2);
+  grid-template-rows: 1fr min-content min-content min-content 3fr;
+  border-radius: 5rem; }
+
+.title-card-main {
+  font-size: 5rem;
+  align-self: center;
+  justify-self: center;
+  grid-row: 2 / 3;
+  text-align: center;
+  margin-top: 3rem; }
+
+.title-card-sub {
+  font-size: 3rem;
+  align-self: center;
+  justify-self: center;
+  grid-row: 3 / 4;
+  text-align: center; }
+
 .contact {
   display: grid;
   grid-column: content-start / content-end; }
 
 .cover {
-  background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.8), rgba(63, 176, 172, 0.8)), url(../images/cover-picture.jpg);
+  background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.8), rgba(63, 176, 172, 0.8)), url(../images/cover-image.jpg);
   background-size: cover;
   display: grid;
   grid-gap: 2rem;
