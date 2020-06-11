@@ -2,5 +2,5 @@
     display: grid;
     grid-column: content-start/ content-end;
     grid-template-columns: [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end];
-    grid-template-rows: 70vh;
+    // grid-template-rows: 70vh;
 }

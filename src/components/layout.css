@@ -37,7 +37,8 @@ a {
   grid-column: content-start / content-end;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  height: 40%; }
+  height: 30rem;
+  margin: 5rem 0; }
 
 .title-card-left {
   grid-column: 1 / 5; }
@@ -68,6 +69,28 @@ a {
   justify-self: center;
   grid-row: 3 / 4;
   text-align: center; }
+
+.text-container {
+  display: grid;
+  grid-column: content-start/ content-end;
+  margin: 5rem 0; }
+
+.text-container-title {
+  font-size: 4rem;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin-top: 3rem; }
+
+.text-container-content {
+  font-size: 2rem;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin-top: 2rem; }
+
+.content-large {
+  font-size: 4rem; }
 
 .contact {
   display: grid;
@@ -133,8 +156,7 @@ a {
 .main-content {
   display: grid;
   grid-column: content-start/ content-end;
-  grid-template-columns: [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end];
-  grid-template-rows: 70vh; }
+  grid-template-columns: [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end]; }
 
 .portfolio {
   display: grid;
