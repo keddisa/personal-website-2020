@@ -19,6 +19,9 @@ const IndexPage = () => (
                 subTitle="How did I get here?"
                 align="center"/>
     <Journey />
+    <TitleCard  title="Glance at my work"
+                subTitle="Check these samples out"
+                align="left"/>
     <Portfolio />
     <Testimonials />
     <Contact />

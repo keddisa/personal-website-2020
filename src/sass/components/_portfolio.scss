@@ -1,4 +1,13 @@
 .portfolio {
     display: grid;
     grid-column: content-start / content-end;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, .25fr));
+    grid-gap: 3rem;
+    padding: 5rem 0;
+    justify-content: center;
+}
+
+.portfolio-cards {
+    display: grid;
+
 }
