@@ -1,0 +1,69 @@
+.title-card-container {
+    grid-column: content-start / content-end;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 30rem;
+    margin: 5rem 0;
+}
+
+.title-card-left {
+    grid-column: 1 / 5;
+}
+
+.title-card-center {
+    grid-column: 2 / 6;
+}
+
+.title-card-right {
+    grid-column: 3 / 7;
+}
+
+.title-card {
+    display: grid;
+    background: linear-gradient(to right bottom, rgba($color-primary, 1), rgba($color-secondary, 1));
+    grid-template-rows: 1fr min-content min-content min-content 3fr;
+    border-radius: 5rem;
+    padding: 2rem;
+}
+
+.skydiving {
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .8), rgba($color-secondary, .8)), url(../images/cover-image.jpg) !important;
+    background-size: cover;
+}
+
+.handyman {
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .95), rgba($color-secondary, .9)), url(../images/handyman.jpg) !important;
+    background-size: cover;
+}
+
+.journey-title {
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .8), rgba($color-secondary, .8)), url(../images/journey.jpg) !important;
+    background-size: cover;
+}
+
+.portfolio-title {
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .9), rgba($color-secondary, .9)), url(../images/portfolio.jpg) !important;
+    background-size: cover;
+}
+
+.contact-title {
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-secondary, .85)), url(../images/contact-title.jpg) !important;
+    background-size: cover;
+}
+
+.title-card-main {
+    font-size: 5rem;
+    align-self: center;
+    justify-self: center;
+    grid-row: 2 / 3;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.title-card-sub {
+    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
+    grid-row: 3 / 4;
+    text-align: center;
+}
