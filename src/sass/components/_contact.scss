@@ -1,4 +1,24 @@
 .contact {
+    padding: 5rem 0;
     display: grid;
+    grid-gap: 5rem;
     grid-column: content-start / content-end;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
+
+.contact-content {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 3rem 1fr;
+    align-items: end; 
+}
+
+.contact-icons{
+    display: grid;
+    padding-top: 3rem;
+    grid-gap: 5rem;
+    grid-template-columns: 4rem 4rem 4.1rem 4rem;
+}
+
