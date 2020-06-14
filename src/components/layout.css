@@ -79,6 +79,10 @@ a {
   background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.9), rgba(135, 200, 178, 0.9)), url(../images/portfolio.jpg) !important;
   background-size: cover; }
 
+.testimonials-title {
+  background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.9), rgba(135, 200, 178, 0.9)), url(../images/testimonials.jpg) !important;
+  background-size: cover; }
+
 .contact-title {
   background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.85), rgba(135, 200, 178, 0.85)), url(../images/contact-title.jpg) !important;
   background-size: cover; }

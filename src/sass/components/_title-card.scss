@@ -46,6 +46,11 @@
     background-size: cover;
 }
 
+.testimonials-title {
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .9), rgba($color-secondary, .9)), url(../images/testimonials.jpg) !important;
+    background-size: cover;
+}
+
 .contact-title {
     background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-secondary, .85)), url(../images/contact-title.jpg) !important;
     background-size: cover;
