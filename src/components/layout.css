@@ -129,6 +129,9 @@ a {
   grid-template-columns: 3rem 1fr;
   align-items: end; }
 
+.contact-email-and-number {
+  height: 4rem; }
+
 .contact-icons {
   display: grid;
   padding-top: 3rem;
