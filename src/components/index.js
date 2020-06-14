@@ -6,6 +6,7 @@ import Journey from "./journey"
 import Portfolio from "./portfolio"
 import PortfolioCard from "./portfolio-card"
 import Testimonials from "./testimonials"
+import TestimonialCard from "./testimonial-card"
 import Contact from "./contact"
 import Header from "./header"
 import TitleCard from "./title-card"
@@ -22,6 +23,7 @@ export {
     SEO,
     Skills,
     Testimonials,
+    TestimonialCard,
     TextContainer,
     TitleCard
 }

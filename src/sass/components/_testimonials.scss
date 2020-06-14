@@ -1,4 +1,6 @@
 .testimonials {
     display: grid;
     grid-column: content-start / content-end;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, .3fr));
+    justify-content: center;
 }

@@ -491,4 +491,22 @@ a {
 
 .testimonials {
   display: grid;
-  grid-column: content-start / content-end; }
+  grid-column: content-start / content-end;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 0.3fr));
+  justify-content: center; }
+
+.testimonial-card {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-gap: 3rem;
+  padding: 4rem; }
+
+.testimonial-headshot {
+  width: 15rem;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center; }
+
+.testimonial-name,
+.testimonial-title {
+  font-weight: bold; }
