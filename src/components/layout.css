@@ -45,7 +45,8 @@ a {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   height: 30rem;
-  margin: 5rem 0; }
+  margin: 5rem 0;
+  color: #173e43 !important; }
 
 .title-card-left {
   grid-column: 1 / 5; }
@@ -131,7 +132,8 @@ a {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 3rem 1fr;
-  align-items: end; }
+  align-items: end;
+  fill: #173e43; }
 
 .contact-email-and-number {
   height: 4rem; }
@@ -256,6 +258,7 @@ a {
   grid-template-rows: 20rem;
   border-radius: 1rem;
   border: solid black 1px;
+  color: #173e43;
   transition: all .3s; }
   .portfolio-card:hover {
     transform: translateY(-0.1rem) scale(1.005);

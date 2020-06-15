@@ -73,7 +73,7 @@ const Journey = () => {
             </svg>
 
                 <div className="journey-card-text">
-                I enjoy a good exercise, and I am an avid runner and triathlete. I have completed several marathons, ultramarathons and ironman races.                </div>
+                I enjoy a good exercise, and I am an avid runner and triathlete. I have completed several marathons, ultramarathons and ironman races                </div>
             </div>
             <div className="journey-card">
             <svg className="journey-icon" viewBox="-80 0 512 512">
